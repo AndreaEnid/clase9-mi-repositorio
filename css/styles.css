@@ -49,6 +49,14 @@
 display: none;
 
 }
+.navbar-light .navbar-toggler {
+  color: #ffffff;
+  border-color: none
+}
+.navbar-nav {
+  align-items: center;
+  padding-left: 300px
+}
 
 .logo-nav-container{
   display: flex;
@@ -88,9 +96,7 @@ display: none;
 }
 
 
-/* Carrusel */
-
-
+/* Carrusel 
 input {
   position:absolute;
   opacity: 0;
@@ -141,7 +147,9 @@ input:checked ~.slide {
 input:checked + label + .slide {
   transform: translateX(0);
   opacity: 1;
-}
+}*/
+
+
 
 /* texto */
 .h1{
@@ -321,6 +329,90 @@ h4 {
 } 
 
 }
+/* Nosotros */
+.main-content {
+  width: 95%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: auto;
+}
+
+/* ==== Styles==== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+h1 {
+  font-family: Nunito ;
+  text-align:center;
+}
+p {
+  color: #fff; 
+  padding:0;
+  margin:0;
+}
+.main-content {
+  margin: 2em auto;
+}
+.informacion {
+  position:relative;
+  padding: 2em 1em;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.25em;
+  background: #99B338;
+  z-index:1;
+}
+.informacion h3 {
+  color: #fff; 
+  margin: 0.35em 0 0;
+  line-height: 2rem;
+  font-weight:500;
+}
+.line {
+
+    background-size: 20%;
+	  height:20px;
+    background-repeat: no-repeat;
+    background-position: left 0; 
+}
+/* ==== Animacion===== */
+.informacion::after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top center;
+    background: #DBAD41;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+.informacion:hover::after {
+	 transform: scaleY(1);
+}
+
 /* punto de venta */
 .container{
   width: 1000px;
@@ -390,7 +482,7 @@ h4 {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px #333);
+  box-shadow: 0 20px 50px #333;
   transform: translateY(-100px);
 }
 
@@ -419,6 +511,41 @@ h4 {
   background:#46c5cc;
   border-radius: 8px;
   color: #fff;
+}
+
+/* ==== Form CSS ====*/
+
+#centered {
+  max-width: 300px;
+  margin: 50px auto 0;
+}
+
+
+input, textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  margin: 8px 0;
+  text-indent: 1em;
+  padding: 10px 0;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+}
+
+input[type="submit"] {
+  background-color: #99B338;
+  color: white;
+  border: 1px solid  #99B338;
+}
+
+input[type="submit"]:hover {
+  background-color: #4d9aff;
+  color: white;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 0.75em;
 }
 @media only screen and (max-width: 375px) {
   
