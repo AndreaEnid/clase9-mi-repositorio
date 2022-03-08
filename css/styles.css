@@ -6,13 +6,61 @@
   font-family: Nunito;
 
 }
+header{
+margin: 0 auto;
+border-bottom: 2px solid #DBAD41;
+background: #f6f7f49f;
+height: auto;
+width: 100%;
+position: sticky;
+z-index: 1;
+min-height: 50px;
+top: 0;
+ }
+
+main{
+margin: 0 auto;
+max-width: 1024px;
+width: 100%;
+}  
+h1 {
+  text-align: center;
+  color: #99B338;
+  padding: 15px;
+}
+
+.headerContainer {
+    max-width: 1024px;
+    margin: 0px auto;
+  }
+
 .body {
   font-family: Nunito;
   color: #333;
   font-size: 15px;
   line-height: 1.6em;
   margin: 0px;
-  background-color: rgb(246, 255, 242); 
+ 
+}
+.debajoDelSlider {
+  margin-top: 0px;
+}
+
+.contenedorServicios {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+}
+.servicios {
+  height: auto;
+  margin-top: 8px;
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+  min-width: 250px;
 }
 /* Nav bar
 .container {
@@ -97,6 +145,7 @@ display: none;
  */
 
 
+
 /* Carrusel 
 input {
   position:absolute;
@@ -150,15 +199,9 @@ input:checked + label + .slide {
   opacity: 1;
 }*/
 
-.carousel
-{position: 100px ;
-
-}
-
 /* texto */
 .h1{
   text-align: center;
-  background-color: #EEF5F5;
   font-size: 50px;
   color: #99B338;
   width: 100%;
@@ -203,32 +246,6 @@ h4 {
   align-items: center;
   flex-wrap: wrap;
 }
-
-
-.contenedorMarcas {
-  margin: unset;
-  display: inline-flex;
-  justify-content: right;
-  width: auto;
-}
-.marcas {
-  height: auto;
-  margin-top: 5px;
-  padding: 8px;
-  max-width: 300px;
-  text-align: center;
-  min-width: 250px;
-}
-.marcas img {
-  max-width: 28%;
-  height: auto;
-  align-items: center;
-  text-align: center;
-}
-.marcas h3 {
-  margin: 10px auto 10px auto;
-}
-
 
 .footer_style{
   position:absolute;
@@ -284,53 +301,8 @@ h4 {
     display: block;
     width: 100%;
     transition: all .25s ease-in-out;
-    
       
     }
-  .header {
-    background-color: #EEF5F5;
-    height: 340px;
-    color: #333;
-    padding: 2rem 0;
-  
-    position: fixed;
-     left: 0;
-     top: 0;
-     right: 0;
-  } 
-   .header a {
-    color: #333;
-    text-decoration: none;
-  }
-  .logo-nav-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
- .navigation {
-   width: 100%;
-   margin-top: 1rem;
- } 
-
- .navigation ul li {
-  display: block;
- } 
- .navigation ul li a {
-  display: block;
-  padding: 8px;
-  transition: 0.4s linear;
-  border-radius: 6px;
-  font-size: 18px;
-  text-align:center ;
-
-
-} 
- .navigation ul li a:hover {
-  color: #ffffff;
-  background-color: #dbad4133;
-
-} 
 
 }
 /* Nosotros */
