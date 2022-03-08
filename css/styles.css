@@ -14,7 +14,7 @@
   margin: 0px;
   background-color: rgb(246, 255, 242); 
 }
-/* Nav bar */
+/* Nav bar
 .container {
   width: 85%;
   max-width: 1024px;
@@ -94,6 +94,7 @@ display: none;
   padding: top 20rem; 
   
 }
+ */
 
 
 /* Carrusel 
@@ -149,7 +150,10 @@ input:checked + label + .slide {
   opacity: 1;
 }*/
 
+.carousel
+{position: 100px ;
 
+}
 
 /* texto */
 .h1{
