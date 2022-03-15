@@ -1,16 +1,16 @@
 @import "./variables.scss"
 
-* {
+*{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: Nunito;
+    font-family: $mainfont
   
   }
   header{
   margin: 0 auto;
   border-bottom: 2px solid #DBAD41;
-  background: #f6f7f49f;
+  background: $maincolor;
   height: auto;
   width: 100%;
   position: sticky;
@@ -36,7 +36,7 @@
     }
   
   .body {
-    font-family: Nunito;
+    font-family: $mainfont;
     color: #333;
     font-size: 15px;
     line-height: 1.6em;
@@ -119,8 +119,8 @@
     left: calc(50% - 1445px/2 - 2.5px);
     top:auto;
     background: #99B338;
-    background-image: linear-gradient(to top, #99B338, #f6f7f49f);
-  
+    background-image: linear-gradient(to top, #99B338, $maincolor;
+
   }
   
   .home-mast {
@@ -141,7 +141,7 @@
       margin: 0 1.5rem 1.5rem 0;
       display: inline-block;
       width: 100%;
-      border: solid 2px rgb(82, 81, 81);
+      border: solid 2px $maincolor;
       padding: 5px;
       box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
       border-radius: 5px;
