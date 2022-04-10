@@ -1,0 +1,48 @@
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+    &__image{
+        width: 70%;
+        background-size:auto;
+    }
+    &__tittle2{
+        position: relative;
+        top: 0;
+    }
+    &__icons{
+        display: flex;
+        .bx{
+        position: relative;
+        font-size: 2.5rem;
+        color: #000;
+        transition: .4s;
+        }
+        .bxl-facebook-square:hover{
+            color: rgb(0, 47, 255);
+        }
+        
+        .bxl-instagram:hover{
+            color: rgb(226, 121, 191);
+        }
+        
+        .bxl-whatsapp:hover{
+            color: #99b338;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .foot{
+        &__icons{
+                .bx{
+                    font-size: 2.5rem;
+                    }
+    }
+}
+}

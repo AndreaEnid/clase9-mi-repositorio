@@ -1,75 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<link rel="stylesheet" href="../css/styles.css">
-	
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;0,700;0,800;1,900&display=swap" rel="stylesheet"> 
-		<link rel="shortcut icon" href="../img/favicon.png">
-	
-		<title>Natelle</title>	
-	</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Productos de Puerricultura"> <!--Esta sección corresponde al SEO-->
+        <meta name="keywords" content="bebés, infancia, disneybaby, cuidados del bebé, redesSociales, ventas"> <!--Esta sección corresponde al SEO-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  <!--Link de los iconos que utilice-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  <!--Link de bootstrap-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;0,700;0,800;1,900&amp;display=swap" rel="stylesheet"> <!--Fuente tipografica -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../img/favicon.png"> <!--Esta sección corresponde al icono en la barra de navegación-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Comentarios agregados en el head por la sugerencia de mi tutor-->
+        <title>Natelle</title>
+    </head>
 <body>
-<!-- Navbar -->
- <header class="header">
- <div class= "container logo-nav-container">
-	<a href="#" class="enlace">
-	 <img src="../img/logo.png" alt="logo" class="logo" >
-		</a>
-	<span class="menu-icon" ></span>
-	<nav class= "navigation">
-		<ul class="navega">
-		<li><a href="../index.html">Home</a></li>
-		<li><a href="nosotros.html">Nosotros</a></li>
-		<li><a href="productos.html">Producto</a></li>
-		<li><a href="galeria.html">Punto de ventas</a></li>
-		<li><a href="contacto.html">Contacto</a></li> 
-				</ul>
-			</div>
-		</nav>
+    <!--------------------HEADER-SECTION----------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <h3 class="navbar-brand" href="#"><img src="../img/logo.png" alt=""></h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse .justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#¿Quienes somos?">¿Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ventas.html">Punto de venta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fotos.html">Productos</a>
+                            </li>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle nav-link" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Contacto</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><a class="dropdown-item" type="button" href="contacto.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" type="button" href="mayoristas.html">¿queres vender?</a></li> 
+                                </ul>
+                            </div>
+                    
+                    </ul>
+                </div>
+            </div>
+            </nav>
+
+            
+<!--------------------CAROUSEL-SECTION----------------------->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">  
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/bg_¿quienes-somos-.jpg" class="d-block w-100 imagen-carousel" alt="team">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/bg_¿quienes-somos2.jpg" class="d-block w-100 imagen-carousel" alt="produccion">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/bg_¿quienes-somos3.jpg" class="d-block w-100 imagen-carousel" alt="empaquetado">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/bg_¿quienes-somos4.jpg" class="d-block w-100 imagen-carousel" alt="almacen">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/bg_¿quienes-somos5.jpg" class="d-block w-100 imagen-carousel" alt="Ventas">
+            </div>
+            
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-	</header>
-<main>
-	<h1 div class="h1">Acompañado tus primeros pasos</div></h1>
-	<p><div class="p"> Encontrá todos los productos para tu bebé con los personajes Clásicos de Disney </div></p> 		
-   
-	<h2>Partners</h2>
-	<div class="contenedorMarcas">
-		<div class="marcas">
-			<img src="../img/disney.png" alt="Disney">
-			<h3>Disney</h3>
-		</div>
-	</div>
-	<div class="contenedorMarcas">
-		<div class="marcas">
-			<img src="../img/mickeylogo.png" alt="Mickey">
-			<h3>Mickey</h3>
-		</div>
-	<div class="contenedorMarcas">
-			<div class="marcas">
-				<img src="../img/minnielogo.png" alt="Minnie">
-				<h3>Minnie</h3>
-			</div>
-	<div class="contenedorMarcas">
-				<div class="marcas">
-					<img src="../img/logotoystory.png" alt="Toy story">
-					<h3>Toy story</h3>
-				</div>
+    
+    </header>
+
+
+
+<!--------------------MAIN-SECTION----------------------->
+
+<main id="nosotros" class="hero">
+    <h1 class="hero__tittle2 mnt-1">Nuestra historia</h1>
+    <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-6 col-12 grid-c1">
+                    <img class="imagenes__cocineros" src="../img/desing1.jpg" alt="Diseño">
+                </div>
+                <div class="col-lg-6 col-12 grid-c2">
+                <p class="description__us"> Con el objetivo de desarrollar productos de puerricultura y set de alimentación infantil seguros y prácticos, surgio Natelle para Argentina.
+                    La empresa cuenta con exclusivos diseños de Disney y ofrece articulos de calidad que cubren las necesidades de los padres y sus bebés. Queremos convertir los momentos más importantes de tu bebe en momentos mágicos!.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-12 grid-c4">
+                    <img class="imagenes__cocineros" src="../img/desing2.jpg" alt="Parteners ">
+                </div>
+                <div class="col-lg-6 col-12 grid-c3">
+                <p class="description__us"> Disney es nuestro Licenciataio diseñamos y comercializamos los productos en todas las cadenas y distribuidores en todo Capital Federal, GBA y Varias provincias Argentinas. Contamos con más de 200 profesionales apasionados en lo que hacen y seguimos creciendo. Todos nosotros compartimos una pasión y una visión del futuro.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-12 grid-c5">
+                    <img class="imagenes__cocineros" src="../img/cocineros3.jpg" alt="Cuidados">
+                </div>
+                <div class="col-lg-6 col-12 grid-c6">
+                <p class="description__us">Natelle garantinza la calidad de sus productos, estan todos rigurosamente diseñados, y aprobados, todos los Productos son BPA Free, No contiene ftalatos como plastificante.  </p>
+                </div>
+            </div>
+        </div>
 </main>
 
-<!--cierre-->
-	<footer>
-		<div class="footer_style " >
-		<h4>Seguinos</h4>
-		<h5>RRSS</h5></div></div>
-		<p>
-		<div class="footer_style_a ">Made by Andrea — Copyright 2022</div></p> 
-	</footer>
 
+
+
+<!--------------------FOOTER-SECTION----------------------->
+<footer class="foot">
+    <img class="foot__image" src="../img/footerimage.jpg" alt="Logos">
+        <h5 class="foot__tittle2">Redes Sociales</h5>
+        <div class="foot__icons">
+            <a href="https://www.facebook.com/natelle.group/" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <h6>@Copyright Diseñado by Sotto Andrea</h6>      
+    </footer>
+    
+
+
+
+<!--------------------SCRIPT-SECTION----------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
